@@ -158,15 +158,15 @@
   <div class="product">
     <img src="Circle Stone Bracelet.jpg" alt="Product">
     <h3>Circle Stone Bracelet</h3>
-    <p>₹140</p>
+    <p>₹300</p>
     QTY:<input type="number" id="qtyA" value="1" min="1" style="width: 25px;">
-    <button class="btn" onclick="addToCart('Circle Stone Bracelet', 140, parseInt(document.getElementById('qtyA').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Circle Stone Bracelet', 140, parseInt(document.getElementById('qtyA').value))">Order</button>
+    <button class="btn" onclick="addToCart('Circle Stone Bracelet', 300, parseInt(document.getElementById('qtyA').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Circle Stone Bracelet', 300, parseInt(document.getElementById('qtyA').value))">Order</button>
   </div>
   <div class="product">
     <img src="Heart Bracelet With Name.jpg" alt="Product">
     <h3 id="secondLastProductName">Heart Bracelet With Name</h3>
-  <p>₹140</p>
+  <p>₹350</p>
    QTY:<input type="number" id="qtyE" value="1" min="1" style="width: 25px;">
   <input type="text" id="wordInput" placeholder="Enter name" maxlength="20" style="width: 80px;">
    <button class="btn" onclick="addWordNamedProductToCart()">Add to Cart</button>
@@ -235,7 +235,7 @@
     document.getElementById('secondLastProductName').textContent = customName;
 
     // Add to cart
-    cart.push({ product: customName, price: 140, quantity: qty });
+    cart.push({ product: customName, price: 350, quantity: qty });
     updateCart();
     alert(`${customName} x${qty} added to cart!`);
   }
@@ -252,7 +252,7 @@
 
     const customName = `${baseName} (${word})`;
 
-    currentSingleProduct = { product: customName, price: 140, quantity: qty };
+    currentSingleProduct = { product: customName, price: 350, quantity: qty };
     togglePopup('singleOrderPopup');
   }
 
